@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #609CE1;
+  color: #091D34;
+}
+
+h1, h2, h3, h4, h5, h6 {font-family:"Arial Black", Gadget, sans-serif;
+  
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Increase the font size of the heading */
+.header h2 {
+  font-size: 30px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: #236AB9;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #236AB9;
+  padding: 20px;
+}
+
+.side a {
+color: #609CE1;
+
+}
+
+/* Main column */
+.main {  
+  flex: 70%;
+  background-color: #E1ECF9;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+  color: #609CE1;
+  background: #091D34;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+#projects {
+  font-family: "Arial Black", Gadget, sans-serif;
+  border-collapse: collapse; 
+  width: 100%;
+  
+}
+
+#projects td, #projects th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#projects tr:nth-child(even){
+  background-color: #f2f2f2;
+  
+}
+
+#projects tr:hover {
+  background-color: #ddd;
+  
+}
+
+#projects th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #236AB9;
+  color: white;
+}
+
+.w3-text-blue-grey,.w3-hover-text-blue-grey:hover,.w3-text-blue-gray,.w3-hover-text-blue-gray:hover{
+  color:#236AB9!important
+  
+}
+
+.w3-blue-grey,.w3-hover-blue-grey:hover,.w3-blue-gray,.w3-hover-blue-gray:hover{
+  color:#fff!important;
+  background-color:#236AB9!important
+  
+}
